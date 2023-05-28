@@ -75,7 +75,7 @@ class MirrorLeechListener:
                     break
             else:
                 break
-            await sleep(0)
+            await sleep(40)
         async with download_dict_lock:
             if self.sameDir and self.sameDir['total'] > 1:
                 self.sameDir['tasks'].remove(self.uid)
